@@ -9,6 +9,4 @@ public class RandomCoincPBurnNotCoincPGROWDouble implements RandomIntf {
     public double nextPGROWTH() {
         return 0.02;
     }
-
-
 }
