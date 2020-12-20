@@ -1,4 +1,6 @@
-package cat.udl.demosEP.random;
+package cat.udl.demosEP.random.mocks;
+
+import cat.udl.demosEP.random.RandomIntf;
 
 public class RandomNotCoincPBurnNotCoincPGROWDouble implements RandomIntf {
     public double nextPBURN() {

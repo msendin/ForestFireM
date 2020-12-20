@@ -1,6 +1,10 @@
 package cat.udl.demosEP;
 
 import cat.udl.demosEP.random.*;
+import cat.udl.demosEP.random.mocks.RandomCoincPBurnCoincPGROWDouble;
+import cat.udl.demosEP.random.mocks.RandomCoincPBurnNotCoincPGROWDouble;
+import cat.udl.demosEP.random.mocks.RandomNotCoincPBurnCoincPGROWDouble;
+import cat.udl.demosEP.random.mocks.RandomNotCoincPBurnNotCoincPGROWDouble;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

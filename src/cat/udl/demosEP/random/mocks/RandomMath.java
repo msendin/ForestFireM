@@ -1,4 +1,4 @@
-package cat.udl.demosEP.random;
+package cat.udl.demosEP.random.mocks;
 
 import cat.udl.demosEP.random.RandomIntf;
 

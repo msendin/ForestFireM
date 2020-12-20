@@ -1,8 +1,8 @@
 package cat.udl.demosEP;
 
 import cat.udl.demosEP.random.*;
+import cat.udl.demosEP.random.mocks.*;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
