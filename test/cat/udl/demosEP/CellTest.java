@@ -19,12 +19,12 @@ class CellTest {
     @BeforeEach
     void setUp() {
         c = new Cell();
+        random = new RandomNotCoincPBurnNotCoincPGROWDouble();
+        c.setRandom(random);
     }
 
     @Test
     void stepCoincPBurnCoincPGROWTest() {
-        random = new RandomCoincPBurnCoincPGROWDouble();
-        c.setRandom(random);
         c.step(false);
         assertEquals(TREE,c.getState());
         c.step(false);
@@ -39,16 +39,12 @@ class CellTest {
 
     @Test
     void stepCoincPBurnNotCoincPGROWTest() {
-        random = new RandomCoincPBurnNotCoincPGROWDouble();
-        c.setRandom(random);
         c.step(false);
         assertEquals(EMPTY,c.getState());
     }
 
     @Test
     void stepNotCoincPBurnCoincPGROWTest() {
-        random = new RandomNotCoincPBurnCoincPGROWDouble();
-        c.setRandom(random);
         c.step(false);
         assertEquals(TREE,c.getState());
         c.step(false);
@@ -63,8 +59,6 @@ class CellTest {
 
     @Test
     void stepNotCoincPBurnNotCoincPGROWTest() {
-        random = new RandomNotCoincPBurnNotCoincPGROWDouble();
-        c.setRandom(random);
         c.step(false);
         assertEquals(EMPTY,c.getState());
     }
