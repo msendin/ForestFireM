@@ -12,19 +12,20 @@ import static cat.udl.demosEP.utils.State.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class CellTest {
+class CellCoincPBurnCoincPGROWTest implements CellTestInterface {
     private Cell c;
     private RandomIntf random;
 
     @BeforeEach
     void setUp() {
         c = new Cell();
-        random = new RandomNotCoincPBurnNotCoincPGROWDouble();
+        random = new RandomCoincPBurnCoincPGROWDouble();
         c.setRandom(random);
     }
 
+    @Override
     @Test
-    void stepCoincPBurnCoincPGROWTest() {
+    public void stepTest() {
         c.step(false);
         assertEquals(TREE,c.getState());
         c.step(false);
@@ -35,31 +36,5 @@ class CellTest {
         assertEquals(TREE,c.getState());
         c.step(true);
         assertEquals(BURNING,c.getState());
-    }
-
-    @Test
-    void stepCoincPBurnNotCoincPGROWTest() {
-        c.step(false);
-        assertEquals(EMPTY,c.getState());
-    }
-
-    @Test
-    void stepNotCoincPBurnCoincPGROWTest() {
-        c.step(false);
-        assertEquals(TREE,c.getState());
-        c.step(false);
-        assertEquals(TREE,c.getState());
-        c.step(true);
-        assertEquals(BURNING,c.getState());
-        c.step(true);
-        assertEquals(EMPTY,c.getState());
-        c.step(true);
-        assertEquals(TREE,c.getState());
-    }
-
-    @Test
-    void stepNotCoincPBurnNotCoincPGROWTest() {
-        c.step(false);
-        assertEquals(EMPTY,c.getState());
     }
 }

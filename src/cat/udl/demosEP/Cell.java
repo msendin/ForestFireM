@@ -37,7 +37,7 @@ class Cell {
         }
     }
 
-    /**********  THIS METHOD SUBSTITUTES THE ONES DEFINED IN PROBLEM 6 ********/
+    /**********  THIS METHOD SUBSTITUTES THE ONES DEFINED IN PREVIOUS VERSION OF PROBLEM 6 ********/
 
     State getState() {
         return state;
