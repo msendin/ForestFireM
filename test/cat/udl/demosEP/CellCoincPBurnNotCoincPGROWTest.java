@@ -1,12 +1,11 @@
 package cat.udl.demosEP;
 
+import cat.udl.demosEP.interfaces.CellTestInterface;
 import cat.udl.demosEP.random.RandomIntf;
-import cat.udl.demosEP.random.mocks.RandomCoincPBurnCoincPGROWDouble;
 import cat.udl.demosEP.random.mocks.RandomCoincPBurnNotCoincPGROWDouble;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static cat.udl.demosEP.utils.State.*;
 import static cat.udl.demosEP.utils.State.EMPTY;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

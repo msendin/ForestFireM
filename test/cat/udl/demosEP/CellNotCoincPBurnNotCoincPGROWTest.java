@@ -1,7 +1,7 @@
 package cat.udl.demosEP;
 
+import cat.udl.demosEP.interfaces.CellTestInterface;
 import cat.udl.demosEP.random.RandomIntf;
-import cat.udl.demosEP.random.mocks.RandomNotCoincPBurnCoincPGROWDouble;
 import cat.udl.demosEP.random.mocks.RandomNotCoincPBurnNotCoincPGROWDouble;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

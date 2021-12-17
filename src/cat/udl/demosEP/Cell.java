@@ -37,24 +37,8 @@ class Cell {
         }
     }
 
-    /**********  THIS METHOD SUBSTITUTES THE ONES DEFINED IN PREVIOUS VERSION OF PROBLEM 6 ********/
-
     State getState() {
         return state;
     }
 
-    /********** SUBSTITUTED METHODS ***********/
-    /*
-    boolean isBurning() {
-        return (state == BURNING);
-    }
-
-    boolean isEmpty() {
-        return (state == EMPTY);
-    }
-
-    boolean hasTree() {
-        return (state == TREE);
-    }
-    ******************************************/
 }
